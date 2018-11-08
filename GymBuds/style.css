@@ -1,0 +1,186 @@
+.index {
+    padding: 20px;
+    text-align: center;
+}
+
+.gymmers {
+    padding: 10px;
+    text-align: center;
+}
+
+.messages {
+    padding: 10px;
+    text-align: center;
+}
+
+.localGyms {
+    padding: 10px;
+    text-align: center;
+}
+
+.profiles{
+    padding: 10px;
+    text-align: center;
+}
+
+.backButton {
+    width: 3%;
+}
+
+div .paddingTop {
+    padding-top: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+.profile {
+    margin: 30px auto;
+    width: 200px;
+}
+
+.picture {
+    width: 200px;
+}
+
+#numWorkouts {
+    position: absolute;
+    top: 200px;
+    left: 660px;
+}
+
+#numBuddies {
+    position: absolute;
+    top: 200px;
+    right: 660px;
+}
+
+#Workouts {
+    position: absolute;
+    top: 220px;
+    left: 600px;
+}
+
+#Buddies {
+    position: absolute;
+    top: 220px;
+    right: 600px;
+}
+
+.graph {
+    margin: 20px auto;
+    width: 500px;
+    height: 300px;
+}
+
+.gymmersProfile{
+    margin: 30px auto;
+    width: 200px;
+}
+
+#deku {
+    position: absolute;
+    left: 500px;
+    width: 10%;
+}
+
+#gymmer1 {
+    position: absolute;
+    top: 180px;
+    left: 750px;
+}
+
+#time1 {
+    position: absolute;
+    top: 225px;
+    left: 750px;
+}
+
+#contact1 {
+    position: absolute;
+    top: 300px;
+    left: 750px;
+    width: 10%;
+}
+
+#profile1 {
+    position: absolute;
+    top: 350px;
+    left: 750px;
+    width: 10%
+}
+
+#kacchan {
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    width: 10%;
+}
+
+#gymmer2 {
+    position: absolute;
+    top: 480px;
+    left: 750px;
+}
+
+#time2 {
+    position: absolute;
+    top: 525px;
+    left: 750px;
+}
+
+#contact2 {
+    position: absolute;
+    top: 600px;
+    left: 750px;
+    width: 10%;
+}
+
+#profile2 {
+    position: absolute;
+    top: 650px;
+    left: 750px;
+    width: 10%
+}
+
+#mineta {
+    position: absolute;
+    left: 500px;
+    top: 720px;
+    width: 8%;
+}
+
+#gymmer3 {
+    position: absolute;
+    top: 720px;
+    left: 750px;
+}
+
+#time3 {
+    position: absolute;
+    top: 770px;
+    left: 750px;
+}
+
+#contact3 {
+    position: absolute;
+    top: 850px;
+    left: 750px;
+    width: 10%;
+}
+
+#profile3 {
+    position: absolute;
+    top: 900px;
+    left: 750px;
+    width: 10%
+}
+
+.contactColor {
+    background: gray;
+}
+
+.viewColor{
+    background: orange;
+}
