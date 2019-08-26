@@ -1,0 +1,322 @@
+/*
+ *  template file with header
+ *	colors scheme:
+ *	white
+ * 	black for most text
+ * 	grey: #888888
+ *	light orange: #ffb093 as accent color
+ */
+
+/*Classes*/
+/* text */
+body {
+/* background details */
+background-color:	white;
+
+/* body font details */
+text-align: center;
+font-family: 'Nanum Gothic';
+color: black;
+font-size: 16px;
+margin: 0;
+padding: 0; }
+
+/* headline configuations */
+h1 {
+  font-family: 'Nanum Gothic';
+  letter-spacing: 0.5rem;
+}
+h2 { font-family: 'Nanum Gothic'; margin: 0.25rem ; }
+h3 { font-family: 'Nanum Gothic'; margin: 0.25rem; }
+p { font-family: 'Nanum Gothic'; margin: 0.8rem; }
+
+
+/* paragraph tag configuations */
+
+li {
+  color: #ffb093;
+  list-style-position: inside;
+  margin: 0.2rem;
+  padding: 0.2rem;}
+
+/* button links details */
+a:hover {      color: #e0e0e0; }
+
+input {
+  color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: white;
+  width: 20rem;
+  height: 3rem;
+  font-size: 16px;
+  font-family: 'Nanum Gothic';
+  margin: 0 0 1rem 0;
+}
+
+/* images */
+.back-button {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+/* class that always rounds image */
+.img-circle {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+}
+
+.main-icon {
+  height: 10rem;
+  width: 10rem;
+  margin: 0 0 1rem 0;
+}
+
+.graph {
+  width: 30rem;
+  height: 20rem;
+}
+
+/* classes */
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-boxh{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-content {
+  padding: 2rem 0 0rem 0;
+  margin-bottom: 2rem;
+  width: 30rem;
+  position: relative;
+}
+
+.find-gymmers-buttons {
+  padding: 2rem 0 4rem 0;
+  margin-bottom: 2rem;
+  width: 30rem;
+  position: relative;
+}
+
+.find-gymers-content {
+  width: 20rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.main-content-gymers {
+  padding: 0;
+  margin: 0;
+  width: 30rem;
+  display: flex;
+  justify-content: left;
+}
+
+.find-gymers-info {
+  margin: 0;
+  padding: 0 0 0 2rem;
+  width: 30rem;
+  display: flex;
+  justify-content: left;
+}
+
+.orange-text { color: #ffb093;}
+
+.grey-button {
+  padding: 1rem  0 0 0 ;
+  height: 2.5rem;
+  width: 21rem;
+  background-color: #888888;
+  border: none;
+  color: white;
+  border-radius: 10rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 0 0 1rem 0 ;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.grey-button-small {
+  padding: 0.7rem 3rem 0.7rem 3rem;
+  height: 2rem;
+  width: 21rem;
+  background-color: #888888;
+  border: none;
+  color: white;
+  border-radius: 10rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 0 1rem 0 ;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.orange-button-small {
+  padding: 0.7rem 4rem 0.7rem 4rem;
+  background-color: #ffb093;
+  height: 2rem;
+  width: 21rem;
+  border: none;
+  color: white;
+  border-radius: 10rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 1rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.grey-button-profile {
+  padding: 0.4rem 3rem 0.4rem 3rem;
+  height: 2rem;
+  width: 21rem;
+  background-color: #888888;
+  border: none;
+  color: white;
+  border-radius: 10rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 0 1rem 0 ;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.orange-button {
+  padding: 1rem  0 0 0 ;
+  background-color: #ffb093;
+  height: 2.5rem;
+  width: 21rem;
+  border: none;
+  color: white;
+  border-radius: 10rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 1rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.img-emoji {
+  width: 2rem;
+  height: 2rem;
+}
+
+.chat-banner {
+  background: #888888;
+  position: fixed;
+  bottom: 0%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 16rem;
+}
+
+#chat-text ul {
+  background-color: grey;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+/* logo banner area */
+#banner {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  color: white;
+  background-color: #888888;
+  padding: 1rem 0 1.5rem 0;
+  font-size: 18px;
+  text-align: center;}
+#banner a {
+  color: white;
+  text-decoration: none; }
+
+#backtotop {
+  color: black;
+  float: right;
+  padding: 0 3rem 1rem 0 ;
+  margin-top: 10rem;
+  margin-right: 10%;
+}
+
+#backtotop1{
+  color: black;
+  float: right;
+  padding: 0 3rem 1rem 0 ;
+  margin-top: 8rem;
+  margin-left: 75%;
+}
+
+/* JavaScript dropdown navigation configurations */
+#ddm {
+padding: 0;
+margin: 0;
+z-index: 30;
+background: #888888; }
+#ddm li {
+margin: 0;
+padding-left: 0;
+list-style: none;
+float: left;
+background: #888888; }
+#ddm li a {
+  display: block;
+  margin: 0 4rem 0 0;
+  padding:0;
+  width: 5rem;
+  background: #888888;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;}
+#ddm li a:hover {
+  background: #888888;
+  color: silver; }
+#ddm div {
+  position: absolute;
+  visibility: hidden;
+  background: #888888; }
+#ddm div a {
+  position: relative;
+  display: block;
+  width: auto;
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin: 0;
+  padding: 1rem;}
+#ddm div a:hover { color: #e0e0e0; }
+
+#googleMaps {
+    padding: 3rem 0 2rem 0;
+    width: 80rem;
+    position: relative;
+}
+
+#editIcon {
+  width: 1.6rem;
+  height: 1.6rem;
+}

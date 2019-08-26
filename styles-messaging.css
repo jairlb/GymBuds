@@ -1,0 +1,169 @@
+/*
+ *  template file with header
+ *	colors scheme:
+ *	white
+ * 	black for most text
+ * 	grey: #888888
+ *	light orange: #ffb093 as accent color
+ */
+
+/*Classes*/
+/* text */
+body {
+/* background details */
+background-color:	white;
+
+/* body font details */
+text-align: center;
+font-family: 'Nanum Gothic';
+color: black;
+font-size: 16px;
+margin: 0;
+padding: 0; }
+
+/* headline configuations */
+h1 {
+  font-family: 'Nanum Gothic';
+  letter-spacing: 0.5rem;
+}
+h2 { font-family: 'Nanum Gothic'; margin: 0.25rem ; }
+h3 { font-family: 'Nanum Gothic'; margin: 0.25rem; }
+p { font-family: 'Nanum Gothic'; margin: 0.8rem; }
+
+
+/* paragraph tag configuations */
+ul { }
+
+ol {
+  color: white;
+  list-style-position: inside;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: #c3c3c3;
+  border-radius: 24px;
+  text-align: right;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+/* button links details */
+a:hover {      color: #e0e0e0; }
+
+input {
+  color: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: white;
+  width: 20rem;
+  height: 3rem;
+  font-size: 16px;
+  font-family: 'Nanum Gothic';
+  margin: 0 0 1rem 0;
+}
+
+/* images */
+.back-button {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+/* class that always rounds image */
+.img-circle {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+}
+
+.main-icon {
+  height: 10rem;
+  width: 10rem;
+  margin: 0 0 1rem 0;
+}
+
+.graph {
+  width: 30rem;
+  height: 20rem;
+}
+
+/* classes */
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-boxh{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-content {
+  padding: 2rem 0 0rem 0;
+  margin-bottom: 2rem;
+  width: 30rem;
+  position: relative;
+}
+
+
+.img-emoji {
+  width: 2rem;
+  height: 2rem;
+}
+
+.chat-banner {
+  background: #888888;
+  position: fixed;
+  bottom: 0%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 16rem;
+}
+
+/* logo banner area */
+#banner {
+  display: flex;
+  justify-content: center;
+  height: 5.5rem;
+  width: 100%;
+  color: white;
+  background-color: #888888;
+  padding: 1rem 0 3rem 0;
+  font-size: 18px;
+  text-align: center;}
+#banner a {
+  color: white;
+  text-decoration: none; }
+
+#backtotop {
+  color: black;
+  float: right;
+  padding: 0 3rem 1rem 0 ;
+  margin-top: 10rem;
+  margin-right: 10%;
+}
+
+#backtotop1{
+  color: black;
+  float: right;
+  padding: 0 3rem 1rem 0 ;
+  margin-top: 8rem;
+  margin-left: 75%;
+}
+
+
+div a {
+  position: relative;
+  display: block;
+  width: auto;
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin: 0;
+  padding: 1rem;
+}
+
+div a:hover { color: #e0e0e0; text-decoration: none; }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	    <title> Gymmers Near Me - Gym Buds </title>
+	    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+        <script language="javascript">
+                var timeout = 500;
+                var closetimer = 0;
+                var ddmenuitem = 0;
+
+                // open hidden layer
+                function mopen(id)
+                {
+                    // cancel close timer
+                    mcancelclosetime();
+
+                    // close old layer
+                    if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+                    // get new layer and show it
+                    ddmenuitem = document.getElementById(id);
+                    ddmenuitem.style.visibility = 'visible';
+                }
+
+                // close showed layer
+                function mclose()
+                {
+                    if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+                }
+
+                // go close timer
+                function mclosetime()
+                {
+                    closetimer = window.setTimeout(mclose, timeout);
+                }
+
+                // cancel close timer
+                function mcancelclosetime()
+                {
+                    if(closetimer)
+                    {
+                        window.clearTimeout(closetimer);
+                        closetimer = null;
+                    }
+                }
+
+                // close layer when click-out
+                document.onclick = mclose;
+                // Stop hiding -->
+        </script>
+    </head>
+
+    <body>
+    <!-- Company Name & jump link on banner  -->
+    <div id="banner">
+        <a href="profiles.html"><h1>GYM BUDS</h1></a>
+    </div>
+
+    <!-- Linking pages -->
+    <ul id="ddm">
+        <table align="center" cellpadding="5" style="padding: 0;">
+        <td>
+            <li><a href="profiles.html">Home</span></a></li>
+            <li><a href="gymersNearMe.html"><span style="color: #ffb093">Find Gymmers</span></a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="localGyms.html">Local Gyms</a></li>
+        </td>
+        </table>
+    </ul>
+        <div class="flex-boxh">
+            <div class="main-content">
+                <h2>Gymmers Near You</h2>
+            </div>
+
+
+            <div class="main-content-gymers">
+                <img class="img-circle" src="images/deku.jpg">
+                <div class="find-gymers-content">
+                  <div class="find-gymers-info"><h2 class="orange-text">Deku</h2></div>
+                  <div class="find-gymers-info"><p>Current Schedule: 8:00pm on Fridays</p></div>
+                  <div class="find-gymers-info"><p>Favorite Gym: Yuuei Gym</p></div>
+                  <div class="find-gymers-info"><p>5 Miles Away</p></div>
+                </div>
+              </div>
+              <div class="find-gymmers-buttons">
+                  <a class="orange-button-small" href="dekuMessages.html" role="button">Contact</a>
+                  <a class="grey-button-small" href="dekuProfile.html" role="button">View Profile</a>
+              </div>
+
+              <div class="main-content-gymers">
+                  <img class="img-circle" src="images/kacchan.jpg">
+                  <div class="find-gymers-content">
+                    <div class="find-gymers-info"><h2 class="orange-text">Kacchan</h2></div>
+                    <div class="find-gymers-info"><p>Current Schedule: 10:00am on Fridays</p></div>
+                    <div class="find-gymers-info"><p>Favorite Gym: Yuuei Gym</p></div>
+                    <div class="find-gymers-info"><p>5 Miles Away</p></div>
+
+                  </div>
+                </div>
+                <div class="find-gymmers-buttons">
+                    <a class="orange-button-small" href="kacchanMessages.html" role="button">Contact</a>
+                    <a class="grey-button-small" href="kacchanProfile.html" role="button">View Profile</a>
+                </div>
+
+                <div class="main-content-gymers">
+                    <img class="img-circle" src="images/mineta.png">
+                    <div class="find-gymers-content">
+                      <div class="find-gymers-info"><h2 class="orange-text">Mineta</h2></div>
+                      <div class="find-gymers-info"><p>Current Schedule: 2:30pm on Saturdays</p></div>
+                      <div class="find-gymers-info"><p>Favorite Gym: None</p></div>
+                      <div class="find-gymers-info"><p>Unknown Miles Away</p></div>
+                    </div>
+                  </div>
+                  <div class="find-gymmers-buttons">
+                      <a class="orange-button-small" href="minetaMessages.html" role="button">Contact</a>
+                      <a class="grey-button-small" href="minetaProfile.html" role="button">View Profile</a>
+                  </div>
+            <!-- Back to Top -->
+	        <div id="backtotop1">
+                <a href = "#banner">
+                <img src = "images/up-arrow.png"
+                width = "30px" height = "40px"
+                alt = "Back to Top" title = "Back to Top">
+                </a>
+            </div>
+        </div>
+
+    </body>
+</html>

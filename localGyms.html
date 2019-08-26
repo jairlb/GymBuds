@@ -1,0 +1,83 @@
+<!--
+ -->
+
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <title>Local Gyms</title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+         <link rel="stylesheet" type="text/css" href="styles.css">
+          <script language="javascript">
+                     var timeout = 500;
+                     var closetimer = 0;
+                     var ddmenuitem = 0;
+
+                     // open hidden layer
+                     function mopen(id)
+                     {
+                         // cancel close timer
+                         mcancelclosetime();
+
+                         // close old layer
+                         if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+                         // get new layer and show it
+                         ddmenuitem = document.getElementById(id);
+                         ddmenuitem.style.visibility = 'visible';
+                     }
+
+                     // close showed layer
+                     function mclose()
+                     {
+                         if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+                     }
+
+                     // go close timer
+                     function mclosetime()
+                     {
+                         closetimer = window.setTimeout(mclose, timeout);
+                     }
+
+                     // cancel close timer
+                     function mcancelclosetime()
+                     {
+                         if(closetimer)
+                         {
+                             window.clearTimeout(closetimer);
+                             closetimer = null;
+                         }
+                     }
+
+                     // close layer when click-out
+                     document.onclick = mclose;
+                     // Stop hiding -->
+             </script>
+      </head>
+
+ <body>
+
+ <!-- Company Name & jump link on banner  -->
+ <div id="banner">
+     <a href="profiles.html"><h1>GYM BUDS</h1></a>
+ </div>
+
+ <!-- Linking pages -->
+ <ul id="ddm">
+     <table align="center" cellpadding="5" style="padding: 0;">
+     <td>
+         <li><a href="profiles.html">Home</a></li>
+         <li><a href="gymersNearMe.html">Find Gymmers</a></li>
+         <li><a href="messages.html">Messages</a></li>
+         <li><a href="localGyms.html"><span style="color: #ffb093">Local Gyms</span></a></li>
+     </td>
+     </table>
+ </ul>
+
+ <div>
+         <iframe width="600" height="500" id="googleMaps" src="https://maps.google.com/maps?q=local%20gyms&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
+ </body>
+
+ </html>

@@ -1,0 +1,118 @@
+<!--
+ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Profile</title>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		 <script language="javascript">
+					var timeout = 500;
+					var closetimer = 0;
+					var ddmenuitem = 0;
+					// open hidden layer
+					function mopen(id)
+					{
+						// cancel close timer
+						mcancelclosetime();
+						// close old layer
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+						// get new layer and show it
+						ddmenuitem = document.getElementById(id);
+						ddmenuitem.style.visibility = 'visible';
+					}
+					// close showed layer
+					function mclose()
+					{
+						if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+					}
+					// go close timer
+					function mclosetime()
+					{
+						closetimer = window.setTimeout(mclose, timeout);
+					}
+					// cancel close timer
+					function mcancelclosetime()
+					{
+						if(closetimer)
+						{
+							window.clearTimeout(closetimer);
+							closetimer = null;
+						}
+					}
+					// close layer when click-out
+					document.onclick = mclose;
+					// Stop hiding -->
+			</script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript" src="script.js"></script>
+	 </head>
+
+<body>
+
+<!-- Company Name & jump link on banner  -->
+<div id="banner">
+	<a href="profile.html"><h1>GYM BUDS</h1></a>
+</div>
+
+<!-- Linking pages -->
+<ul id="ddm">
+	<table align="center" cellpadding="5" style="padding: 0;">
+	<td>
+		<li><a href="profile.html"><span style="color: #ffb093">Home</span></a></li>
+		<li><a href="gymersNearMe.html">Find Gymmers</a></li>
+		<li><a href="messages.html">Messages</a></li>
+		<li><a href="localGyms.html">Local Gyms</a></li>
+	</td>
+	</table>
+</ul>
+
+<!-- MAIN Profile CONTENT-->
+<div class="flex-box">
+	<div>
+		<div class="orange-text">999</div>
+		<h3>Gym Buds</h3>
+	</div>
+	<div class="main-content">
+		<img class="img-circle" src="images/mikasa.jpg">
+		<h2>Mikasa Ackerman</h2>
+	</div>
+	<div>
+		<div class="orange-text">999</div>
+			<h3>Workouts</h3>
+		</div>
+	</div>
+	<!-- Schedule/gym -->
+	<div class="flex-box">
+		<div class="main-content">
+			<h3 id="currSched"></h3>
+			<h3 id="currGym"></h3>
+		</div>
+		<div>
+			<input id="editIcon" type="image" src="images/edit-icon.png"/>
+		</div>
+	</div>
+	<!-- stats -->
+	<div class="flex-box">
+		<div class="main-content">
+			<h3>Workout Statistics</h3>
+			<img class="graph" src="images/graph.png">
+		</div>
+	</div>
+	<!-- Back to Top -->
+	<div id="backtotop">
+		<a href = "#banner">
+		<img src = "images/up-arrow.png"
+		 width = "30px" height = "40px"
+		 alt = "Back to Top" title = "Back to Top">
+		</a>
+	</div>
+</div>
+
+
+
+</body>
+</html>
